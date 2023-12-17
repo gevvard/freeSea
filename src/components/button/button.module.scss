@@ -1,0 +1,63 @@
+@import '../../assets/styles/variables.scss';
+
+.btn {
+  /* Common button styles */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+
+  /* Small size */
+  &.small {
+    font-size: 12px;
+    display: inline-flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+  }
+
+  /* Default size - Medium */
+  &.medium {
+    display: inline-flex;
+    height: 60px;
+    padding: 17px 58px 21px 58px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 50px;
+  }
+
+  /* Large size */
+  &.large {
+    font-size: 18px;
+    display: flex;
+    width: 410px;
+    height: 60px;
+    padding: 19px 195px 21px 195px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    border-radius: 50px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.primary {
+  background: $green;
+  color: white;
+}
+
+.secondary {
+  background: red;
+}
+
+.tertiary {
+  background: $white;
+  color: $black;
+}

@@ -1,0 +1,141 @@
+@import '../../../../assets/styles/variables.scss';
+
+.duration {
+  width: 30%;
+
+  .durationTitle {
+    color: $black;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .timeOption {
+    color: $black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1.5px solid $grey-form;
+    background: $white;
+
+    &:nth-child(2) {
+      border: 2px solid $orange;
+    }
+
+    &:nth-child(3) {
+      padding: 20px;
+    }
+  }
+
+  .orderInfo {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    >div {
+      color: $black;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    img {
+      margin-left: 4px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+  }
+
+  .separatorLine {
+    height: 2px;
+    background-color: $grey-dark;
+    opacity: 0.2;
+    margin: 20px 0;
+  }
+
+  .telephoneNumber {
+    color: $black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .number {
+    margin-top: 10px;
+    border-radius: 35px;
+    background: $grey-light;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 19px 30px 21px 20px;
+    align-items: center;
+    gap: 10px;
+    color: $grey-black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    text-align: start;
+  }
+
+  .clarificationText {
+    color: $grey-black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    text-align: start;
+  }
+
+  .order {
+    border-radius: 50px;
+    background: $green;
+    color: var(--White, #FFF);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 20px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .duration {
+    width: 60%;
+    margin: 0 auto;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 760px) {
+  .duration {
+    width: 100%;
+  }
+}
+

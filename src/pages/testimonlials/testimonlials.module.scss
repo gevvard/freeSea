@@ -1,0 +1,64 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+
+.testimonlials {
+  display: flex;
+  justify-content: center;
+  gap: 30px
+}
+
+.testimonlialsItem {
+  border-radius: 30px;
+  background: $grey-light;
+  width: 317px;
+  height: 550px;
+  padding: 29px 21px;
+}
+
+.date {
+  color: $black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.sizes {
+  background-color: #dddddd;
+  color: #a4a4a4;
+  font-size: 24px;
+  height: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.title {
+  color: $black;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 40px 0 60px 0;
+}
+
+
+@media (max-width: 760px) {
+  .title {
+    font-size: 24px;
+    padding-top: 17px;
+  }
+
+  .testimonlials {
+    max-width: 90%;
+    overflow-x: scroll;
+    @include custom-scroll-bar;
+  }
+
+  .testimonlialsItem {
+    min-width: 205px;
+    height: 374px;
+  }
+}

@@ -1,0 +1,135 @@
+@import '../../assets/styles/variables.scss';
+
+.dailyMenu {
+  color: $black;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 60px;
+
+  .dailyMenuTitle {
+    color: $black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .dailyMenuContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .weekDays {
+    display: flex;
+  }
+
+  .weekDay {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1.5px solid $grey-form;
+    color: $black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 5px;
+
+    &:first-child {
+      border: 2px solid $orange;
+    }
+  }
+
+  .text {
+    color: $black;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    >div {
+      color: $black-50;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  .menuItems {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    gap: 25px;
+
+    .menuItem {
+      border-radius: 30px;
+      background: $grey-light;
+
+      .title {
+        color: $black;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+
+      .calories {
+        color: $black-50;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 63px;
+        margin-bottom: 22px;
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .dailyMenu {
+    .dailyMenuTitle {
+      font-size: 24px;
+    }
+
+    .weekDay {
+      font-size: 14px;
+      height: 45px;
+      width: 45px;
+    }
+
+    .weekDays {
+      justify-content: center;
+    }
+
+    .dailyMenuContent {
+      flex-direction: column;
+    }
+
+    .text {
+      display: none;
+    }
+
+    .menuItem {
+      img {
+        width: 100%;
+      }
+    }
+    
+    .menuItems {
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .menuItem:first-child {
+    display: none;
+  }
+}
