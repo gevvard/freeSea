@@ -25,7 +25,7 @@ const Duration = () => {
             Sale
             <img src={infoIcon} alt="info" />
           </div>
-          <div>-2 040 AMD</div>
+          <div className={css.price} >-2 040 AMD</div>
         </div>
         <div className={css.row}>
           <div>

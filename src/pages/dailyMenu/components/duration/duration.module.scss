@@ -44,6 +44,9 @@
   }
 
   .row {
+    .price{
+      color: red;
+    }
     >div {
       color: $black;
       font-size: 16px;
@@ -121,6 +124,9 @@
     line-height: 25px;
     padding: 20px;
   }
+}
+.price{
+  color: red;
 }
 
 
